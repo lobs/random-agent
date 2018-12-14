@@ -8,7 +8,7 @@ HTTP_HEADERS = {
 	"User-Agent" : "Fallback UserAgent"
 }
 try: 
-	HTTP_HEADERS["User-Agent"] = NewUA.RandomAgent()
+	HTTP_HEADERS["User-Agent"] = UserAgent.RandomAgent()
 except ConnectionError:
 	pass
 
