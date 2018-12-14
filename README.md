@@ -4,14 +4,13 @@ A short and sweet Python Class which returns a UserAgent string by querying the 
 ```
 from UserAgent import UserAgent
 
-try:
-  HTTP_HEADERS = {
-    "User-Agent" : UserAgent.RandomAgent()
-  }
+HTTP_HEADERS = {
+	"User-Agent" : "Fallback UserAgent"
+}
+try: 
+	HTTP_HEADERS["User-Agent"] = NewUA.RandomAgent()
 except ConnectionError:
-  HTTP_HEADERS = {
-   "User-Agent" : "Fallback User Agent."
-  }
+	pass
 
 print(HTTP_HEADERS["User-Agent"])
 ```
