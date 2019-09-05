@@ -1,3 +1,6 @@
+# Deprecated
+No longer running any web crawlers that need to access new user agents. Taking down useragent.ddns.net due to needless EC2 costs. The traffic appears to be 99.9% crud.  
+
 # random-agent
 A short and sweet Python Class which returns a UserAgent string by querying the simple API I hosted on http://useragent.ddns.net
 
